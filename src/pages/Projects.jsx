@@ -15,11 +15,7 @@ const Projects = () => {
       </h1>
 
       <p className='text-slate-500 mt-2 leading-relaxed'>
-        I've embarked on numerous projects throughout the years, but these are
-        the ones I hold closest to my heart. Many of them are open-source, so if
-        you come across something that piques your interest, feel free to
-        explore the codebase and contribute your ideas for further enhancements.
-        Your collaboration is highly valued!
+        I've worked on several different projects since I took the began my Tech journey in 2022. From my first musical interval training game in JS, to my two recent efforts incorporating OpenAI's ChatGPT and Dall-E-3, I've learned many times over that there is no substitue for putting in the work. Similarly, I've learned there is no greater feeling than the final commit of a job well done!
       </p>
 
       <div className='flex flex-wrap my-20 gap-16'>
