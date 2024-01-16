@@ -1,15 +1,13 @@
 import hero from './hero.jpg'
-import meta from './meta.png'
-import shopify from './shopify.png'
-import starbucks from './starbucks.png'
-import tesla from './tesla.png'
+import neu from './neu.png'
+import ga from './ga.png'
+import propcard from './propcard.png'
 import logo from './logo.png'
 
 export {
     hero,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
+    neu,
+    ga,
+    propcard,
     logo
 }
