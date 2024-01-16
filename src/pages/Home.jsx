@@ -1,13 +1,13 @@
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useEffect, useRef, useState } from "react";
 
-import conflicted from "../assets/conflicted.mp3";
+import voyage from "../assets/voyage.mp3";
 import { HomeInfo, Loader } from "../components";
 import { soundoff, soundon } from "../assets/icons";
 import { Bird, Island, Plane, Sky } from "../models";
 
 const Home = () => {
-  const audioRef = useRef(new Audio(conflicted));
+  const audioRef = useRef(new Audio(voyage));
   audioRef.current.volume = 0.4;
   audioRef.current.loop = true;
 

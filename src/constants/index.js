@@ -18,7 +18,6 @@ import {
     pricewise,
     react,
     redux,
-    sass,
     snapgram,
     summiz,
     tailwindcss,
@@ -93,11 +92,6 @@ export const skills = [
         type: "State Management",
     },
     {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
@@ -112,9 +106,9 @@ export const skills = [
 export const experiences = [
     {
         title: "Enrollment Operations Lead",
-        company_name: "Northeastern University",
+        company_name: "Northeastern University CPS",
         icon: neu,
-        iconBg: "#accbe1",
+        iconBg: "#FEF7DA",
         date: "February 2018 - May 2022",
         points: [
             "Promoted to Lead 6 months after being hired as an Enrollment Operations Assistant in August 2017.",
@@ -139,7 +133,7 @@ export const experiences = [
         title: "Software Engineer Intern",
         company_name: "Propcard",
         icon: propcard,
-        iconBg: "#b7e4c7",
+        iconBg: "#C0C0C0",
         date: "December 2023 - January 2024",
         points: [
             "Modernized data pipelines and ETL processes to improve platform scalability.",
@@ -163,11 +157,6 @@ export const socialLinks = [
         name: 'LinkedIn',
         iconUrl: linkedin,
         link: 'https://www.linkedin.com/in/seancurrlin',
-    },
-    {
-        name: 'Spotify',
-        iconUrl: spotify,
-        link: 'https://open.spotify.com/artist/1yes1OaMmV9w58iMeggawH',
     }
 ];
 
