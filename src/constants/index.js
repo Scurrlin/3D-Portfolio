@@ -1,4 +1,4 @@
-import { meta, shopify, starbucks, tesla } from "../assets/images";
+import { neu, ga, propcard } from "../assets/images";
 import {
     car,
     contact,
@@ -111,55 +111,39 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
+        title: "Enrollment Operations Lead",
+        company_name: "Northeastern University",
+        icon: neu,
         iconBg: "#accbe1",
-        date: "March 2020 - April 2021",
+        date: "February 2018 - May 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Promoted to Lead 6 months after being hired as an Enrollment Operations Assistant in August 2017.",
+            "Played integral role in launch of the Student Hub in April 2022 which resulted in a 75% improvement in international transcript condition fulfillment.",
+            "Submitted an approved proposal for 16 GB RAM upgrades to all team members laptops to increase productivity.",
+            "Assisted in training student workers and managed applicant caseloads across multiple populations."
         ],
     },
     {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Student Software Engineer",
+        company_name: "General Assembly",
+        icon: ga,
         iconBg: "#fbc3bc",
-        date: "Jan 2021 - Feb 2022",
+        date: "July 2022 - October 2022",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Software Engineering Bootcamp: Full-Time Immersive Program.", 
+            "12-week, 500+ hour Immersive Full Stack Software Engineering bootcamp. This intensive program covered product development fundamentals, object-oriented programming, MVC frameworks, data modeling, team collaboration strategies, and the creation of a professional portfolio."
+            
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Software Engineer Intern",
+        company_name: "Propcard",
+        icon: propcard,
         iconBg: "#b7e4c7",
-        date: "Jan 2022 - Jan 2023",
+        date: "December 2023 - January 2024",
         points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#a2d2ff",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
+            "Modernized data pipelines and ETL processes to improve platform scalability.",
+            "Collaborated with a senior developer to design and build a Web API tailored for specific CRMLS data queries."
         ],
     },
 ];
