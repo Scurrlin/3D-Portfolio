@@ -43,7 +43,7 @@ const Contact = () => {
           setLoading(false);
           showAlert({
             show: true,
-            text: "Thank you for your message 😃",
+            text: "Thank you for your email 😃",
             type: "success",
           });
 
@@ -64,7 +64,7 @@ const Contact = () => {
 
           showAlert({
             show: true,
-            text: "I didn't receive your message 😢",
+            text: "I didn't get your email 😢",
             type: "danger",
           });
         }
@@ -89,7 +89,7 @@ const Contact = () => {
               type='text'
               name='name'
               className='input'
-              placeholder='John'
+              placeholder='Your Name'
               required
               value={form.name}
               onChange={handleChange}
@@ -98,12 +98,12 @@ const Contact = () => {
             />
           </label>
           <label className='text-black-500 font-semibold'>
-            Email
+            Email Address
             <input
               type='email'
               name='email'
               className='input'
-              placeholder='John@gmail.com'
+              placeholder='your.email@gmail.com'
               required
               value={form.email}
               onChange={handleChange}
@@ -112,12 +112,12 @@ const Contact = () => {
             />
           </label>
           <label className='text-black-500 font-semibold'>
-            Your Message
+            Email Body
             <textarea
               name='message'
               rows='4'
               className='textarea'
-              placeholder='Write your thoughts here...'
+              placeholder='Write your email here!'
               value={form.message}
               onChange={handleChange}
               onFocus={handleFocus}
