@@ -18,11 +18,11 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium sm:text-xl text-center'>
-          Worked with many companies <br /> and picked up many skills along the way
+        I worked in Higher Education for 5 years <br /> before I transitioned into Tech
         </p>
 
         <Link to='/about' className='neo-brutalism-white neo-btn'>
-          Learn more
+          Learn more!
           <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
         </Link>
       </div>
@@ -33,7 +33,7 @@ const HomeInfo = ({ currentStage }) => {
     return (
       <div className='info-box'>
         <p className='font-medium text-center sm:text-xl'>
-          Led multiple projects to success over the years. <br /> Curious about the impact?
+          I've worked on a variety of projects <br /> including single-page and full-stack applications
         </p>
 
         <Link to='/projects' className='neo-brutalism-white neo-btn'>
@@ -52,7 +52,7 @@ const HomeInfo = ({ currentStage }) => {
       </p>
 
       <Link to='/contact' className='neo-brutalism-white neo-btn'>
-      Send me an email!
+      Let's talk!
         <img src={arrow} alt='arrow' className='w-4 h-4 object-contain' />
       </Link>
     </div>
