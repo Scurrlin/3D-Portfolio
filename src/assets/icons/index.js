@@ -42,8 +42,6 @@ export {
     typescript,
     linkedin,
     twitter,
-    car,
-    estate,
     pricewise,
     snapgram,
     summiz,
