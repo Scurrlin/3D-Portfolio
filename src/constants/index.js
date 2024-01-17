@@ -164,7 +164,7 @@ export const projects = [
     {
         iconUrl: pricewise,
         theme: 'btn-back-blue',
-        name: 'Crypto0Watch',
+        name: 'Crypt0Watch',
         description: "A cryptocurrency tracking app ranking the top 50 coins by current market cap; built with React and CoinGecko's API.",
         link: 'https://github.com/Scurrlin/Crypt0Watch',
     },
