@@ -1,8 +1,11 @@
-# React + Vite
+## 3D Portolio
+A new and improved version of [my developer portfolio](https://seancurrlin.onrender.com/) using ReactJS and ThreeJS.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![banner_image](https://i.imgur.com/jwsYgV5.png)
 
-Currently, two official plugins are available:
+## Take a look!
+[3D Portfolio](https://seancurrlin.com/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
+* ReactJS
+* ThreeJS
