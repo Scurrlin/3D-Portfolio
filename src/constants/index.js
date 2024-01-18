@@ -171,8 +171,8 @@ export const projects = [
     {
         iconUrl: threads,
         theme: 'btn-back-green',
-        name: 'Dev Blog',
-        description: 'A blog built with Mongoose, Express, and Node.js. User authenication data is also protected via JSON Web Tokens.',
-        link: 'https://github.com/Scurrlin/Dev-Blog',
+        name: 'Lift Off',
+        description: 'A full MERN stack exercise journal to help you reach your fitness goals! This app features full CRUD functionality and uses JSON Web Tokens to protect and authenticate user credentials.',
+        link: 'https://github.com/Scurrlin/Lift-Off',
     }
 ];
