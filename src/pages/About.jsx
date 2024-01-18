@@ -22,7 +22,7 @@ import {
   
         <div className='mt-5 flex flex-col gap-3 text-slate-500'>
           <p>
-            I'm a software Engineer based in Boston. I specialize in designing, debugging, and deploying web applications.
+            I'm a Software Engineer based in Boston. I specialize in designing, debugging, and deploying web applications.
           </p>
         </div>
   
