@@ -46,7 +46,7 @@ import {
         </div>
   
         <div className='py-16'>
-          <h3 className='subhead-text'>Work Experience.</h3>
+          <h3 className='subhead-text'>Work Experience</h3>
           <div className='mt-5 flex flex-col gap-3 text-slate-500'>
             <p>
               I worked in Higher Education as an Enrollment Operations Lead for 5 years before transitioning into the Tech Industry. Follow my journey below!
