@@ -9,6 +9,7 @@ import {
     javascript,
     linkedin,
     mongodb,
+    mui,
     nextjs,
     nodejs,
     pricewise,
@@ -56,6 +57,11 @@ export const skills = [
         imageUrl: mongodb,
         name: "MongoDB",
         type: "Database",
+    },
+    {
+        imageUrl: mui,
+        name: "Material-UI",
+        type: "Frontend",
     },
     {
         imageUrl: nextjs,
@@ -175,7 +181,7 @@ export const projects = [
         iconUrl: threads,
         theme: 'btn-back-green',
         name: 'Lift Off',
-        description: 'A full MERN stack exercise journal to help you reach your fitness goals! This app features full CRUD functionality and uses JSON Web Tokens to protect and authenticate user credentials.',
+        description: 'A full MERN stack exercise journal with full CRUD functionality; uses JSON Web Tokens to protect and authenticate user credentials.',
         link: 'https://github.com/Scurrlin/Lift-Off',
         demo: 'https://www.lift-off.fun/'
     }
