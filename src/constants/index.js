@@ -153,6 +153,7 @@ export const projects = [
         name: 'Artofficial',
         description: 'A full MERN stack AI Image Generator powered by Cloudinary and DALL-E-3; built with React, MongoDB, Express, Node, and Hostinger.',
         link: 'https://github.com/Scurrlin/Artofficial',
+        demo: 'https://www.artofficial.fun/',
     },
     {
         iconUrl: summiz,
@@ -160,6 +161,7 @@ export const projects = [
         name: 'SummarAIze',
         description: "An Article Summarizer powered by RapidAPI and OpenAI's GPT Model; built with React and styled with Tailwind CSS.",
         link: 'https://github.com/Scurrlin/AI_Article_Summarizer_Clone',
+        demo: 'https://summaraize-jj5v.onrender.com/',
     },
     {
         iconUrl: pricewise,
@@ -167,6 +169,7 @@ export const projects = [
         name: 'Crypt0Watch',
         description: "A cryptocurrency tracking app ranking the top 50 coins by current market cap; built with React and CoinGecko's API.",
         link: 'https://github.com/Scurrlin/Crypt0Watch',
+        demo: 'https://crypt0watch.onrender.com/',
     },
     {
         iconUrl: threads,
@@ -174,5 +177,6 @@ export const projects = [
         name: 'Lift Off',
         description: 'A full MERN stack exercise journal to help you reach your fitness goals! This app features full CRUD functionality and uses JSON Web Tokens to protect and authenticate user credentials.',
         link: 'https://github.com/Scurrlin/Lift-Off',
+        demo: 'https://www.lift-off.fun/'
     }
 ];
