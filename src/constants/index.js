@@ -1,6 +1,5 @@
 import { neu, ga, propcard } from "../assets/images";
 import {
-    contact,
     css,
     express,
     git,
@@ -16,6 +15,7 @@ import {
     react,
     redux,
     snapgram,
+    spotify,
     summiz,
     tailwindcss,
     threads,
@@ -136,11 +136,6 @@ export const experiences = [
 
 export const socialLinks = [
     {
-        name: 'Contact',
-        iconUrl: contact,
-        link: '/contact',
-    },
-    {
         name: 'GitHub',
         iconUrl: github,
         link: 'https://github.com/Scurrlin',
@@ -149,7 +144,12 @@ export const socialLinks = [
         name: 'LinkedIn',
         iconUrl: linkedin,
         link: 'https://www.linkedin.com/in/seancurrlin',
-    }
+    },
+    {
+        name: 'Spotify',
+        iconUrl: spotify,
+        link: 'https://open.spotify.com/artist/1yes1OaMmV9w58iMeggawH',
+    },
 ];
 
 export const projects = [
