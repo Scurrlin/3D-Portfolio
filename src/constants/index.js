@@ -138,7 +138,7 @@ export const socialLinks = [
     {
         name: 'Contact',
         iconUrl: contact,
-        link: 'https://seancurrlin.com/contact',
+        link: '/contact',
     },
     {
         name: 'GitHub',
