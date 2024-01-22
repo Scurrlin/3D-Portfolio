@@ -1,4 +1,4 @@
-## 3D Portolio
+# 3D Portolio
 A new and improved version of [my developer portfolio](https://seancurrlin.onrender.com/) built with ReactJS and ThreeJS.
 
 ![banner_image](https://i.imgur.com/jwsYgV5.png)
