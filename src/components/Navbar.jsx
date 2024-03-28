@@ -8,7 +8,7 @@ const Navbar = () => {
       <NavLink to='/'>
         <img src={logo} alt='logo' className='w-18 h-18 object-contain' />
       </NavLink>
-      <nav className='flex text-lg gap-2 font-medium'>
+      <nav className='flex text-base gap-3 font-medium'>
         <a href="https://drive.google.com/file/d/1bWSRuuXw544jFjDJSBMfYyDiRc6BlM0U/view?usp=sharing" target='_blank' rel='noopener noreferrer' className="text-black">
           Resume
         </a>
