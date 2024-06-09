@@ -110,6 +110,17 @@ export const experiences = [
         ],
     },
     {
+        title: "Onboarding Specialist",
+        company_name: "Propcard",
+        icon: propcard,
+        iconBg: "#C0C0C0",
+        date: "May 2022 - July 2022",
+        points: [
+            "Modernized data pipelines and ETL processes to improve platform scalability.",
+            "Collaborated with a senior developer to design and build a Web API tailored for specific CRMLS data queries."
+        ],
+    },
+    {
         title: "Student Software Engineer",
         company_name: "General Assembly",
         icon: ga,
@@ -122,11 +133,11 @@ export const experiences = [
         ],
     },
     {
-        title: "Software Engineer Intern",
+        title: "Customer Support Engineer",
         company_name: "Propcard",
         icon: propcard,
         iconBg: "#C0C0C0",
-        date: "December 2023 - January 2024",
+        date: "January 2023 - June 2024",
         points: [
             "Modernized data pipelines and ETL processes to improve platform scalability.",
             "Collaborated with a senior developer to design and build a Web API tailored for specific CRMLS data queries."
