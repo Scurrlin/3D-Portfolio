@@ -104,8 +104,9 @@ export const experiences = [
         date: "February 2018 - May 2022",
         points: [
             "Promoted to Lead 6 months after being hired as an Enrollment Operations Assistant in August 2017.",
-            "Played integral role in launch of the Student Hub in April 2022 which resulted in a 75% improvement in international transcript condition fulfillment.",
-            "Submitted an approved proposal for 16 GB RAM upgrades to all team members laptops to increase productivity.",
+            "Played a vital role in orchestrating the launch of the “Student Hub” in April 2022 which resulted in a 75% improvement in international transcript condition fulfillment.",
+            "Implemented migration of external admissions email inbox to a Salesforce ticketing system which cut average response times by 50%, from 96 hours to 48 hours.",
+            "Spearheaded the crafting and submission of an approved proposal for upgrading all team members’ laptops with 16 GB RAM; productivity increased substantially.",
             "Assisted in training student workers and managed applicant caseloads across multiple populations."
         ],
     },
@@ -116,8 +117,10 @@ export const experiences = [
         iconBg: "#C0C0C0",
         date: "May 2022 - July 2022",
         points: [
-            "Modernized data pipelines and ETL processes to improve platform scalability.",
-            "Collaborated with a senior developer to design and build a Web API tailored for specific CRMLS data queries."
+            "Responded to inbound client requests for meetings with initial outreach.",
+            "Effectively pitched the benefits of Propcard to potential clients, highlighting it’s unique value proposition.",
+            "Added relevant media copy to the custom Propcard CMS, ensuring high quality content presentations.",
+            "Guided clients through the Propcard platform, providing insights to maximize their usage and benefits."
         ],
     },
     {
@@ -137,10 +140,15 @@ export const experiences = [
         company_name: "Propcard",
         icon: propcard,
         iconBg: "#C0C0C0",
-        date: "January 2023 - June 2024",
+        date: "January 2023 - May 2024",
         points: [
+            "Expanded previous role to include custom website updates via HTML injection.",
+            "Collaborated with a senior developer to build an updated Web API tailored for specific CRMLS data points.",
             "Modernized data pipelines and ETL processes to improve platform scalability.",
-            "Collaborated with a senior developer to design and build a Web API tailored for specific CRMLS data queries."
+            "Installed analytics tokens and tracking pixels to collect and analyze web traffic data.",
+            "Managed SQL Database, performing maintenance and updates as needed.",
+            "Monitored cron jobs for MLS connection tokens."
+
         ],
     },
 ];
