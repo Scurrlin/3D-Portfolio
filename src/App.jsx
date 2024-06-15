@@ -8,6 +8,12 @@ import { About, Contact, Home, Projects } from "./pages";
 const App = () => {
   useEffect(() => {
     LogRocket.init('cxnnse/3d-portfolio');
+    
+    const sessionId = uuidv();
+    
+    LogRocket.identify(sessionId, {
+      sessionType: 'anonymous'
+    });
   }, []);
 
   return (
