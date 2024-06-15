@@ -9,3 +9,5 @@ A new and improved version of [my developer portfolio](https://seancurrlin.onren
 ## Technologies Used
 * ReactJS
 * ThreeJS
+* Vercel
+* LogRocket
