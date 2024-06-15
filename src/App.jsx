@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import LogRocket from 'logrocket';
+import { v4 as uuidv4 } from 'uuid';
 
 import { Footer, Navbar } from "./components";
 import { About, Contact, Home, Projects } from "./pages";
@@ -9,7 +10,7 @@ const App = () => {
   useEffect(() => {
     LogRocket.init('cxnnse/3d-portfolio');
     
-    const sessionId = uuidv();
+    const sessionId = uuidv4();
     
     LogRocket.identify(sessionId, {
       sessionType: 'anonymous'
