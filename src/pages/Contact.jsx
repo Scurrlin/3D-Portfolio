@@ -1,6 +1,8 @@
 import emailjs from "@emailjs/browser";
 import { Canvas } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
+import LogRocket from 'logrocket';
+import { v4 as uuidv4 } from 'uuid';
 
 import { Fox } from "../models";
 import useAlert from "../hooks/useAlert";
@@ -8,67 +10,101 @@ import { Alert, Loader } from "../components";
 
 const Contact = () => {
   const formRef = useRef();
+  const feedbackFormRef = useRef();
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [feedbackForm, setFeedbackForm] = useState({ name: "", email: "", feedback: "" });
   const { alert, showAlert, hideAlert } = useAlert();
   const [loading, setLoading] = useState(false);
+  const [feedbackLoading, setFeedbackLoading] = useState(false);
   const [currentAnimation, setCurrentAnimation] = useState("idle");
 
-  const handleChange = ({ target: { name, value } }) => {
-    setForm({ ...form, [name]: value });
+  const handleChange = ({ target: { name, value } }, setForm) => {
+    setForm((prevForm) => ({ ...prevForm, [name]: value }));
   };
 
   const handleFocus = () => setCurrentAnimation("walk");
   const handleBlur = () => setCurrentAnimation("idle");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, form, setForm, formType) => {
     e.preventDefault();
-    setLoading(true);
-    setCurrentAnimation("hit");
+    if (formType === "email") {
+      setLoading(true);
+      setCurrentAnimation("hit");
 
-    emailjs
-      .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        {
-          from_name: form.name,
-          to_name: "Sean Currlin",
-          from_email: form.email,
-          to_email: "sean.currlin@gmail.com",
-          message: form.message,
-        },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        () => {
-          setLoading(false);
-          showAlert({
-            show: true,
-            text: "Thank you for your email 😃",
-            type: "success",
-          });
-
-          setTimeout(() => {
-            hideAlert(false);
-            setCurrentAnimation("idle");
-            setForm({
-              name: "",
-              email: "",
-              message: "",
+      emailjs
+        .send(
+          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+          {
+            from_name: form.name,
+            to_name: "Sean Currlin",
+            from_email: form.email,
+            to_email: "sean.currlin@gmail.com",
+            message: form.message,
+          },
+          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        )
+        .then(
+          () => {
+            setLoading(false);
+            showAlert({
+              show: true,
+              text: "Thank you for your email 😃",
+              type: "success",
             });
-          }, [3000]);
-        },
-        (error) => {
-          setLoading(false);
-          console.error(error);
-          setCurrentAnimation("idle");
 
-          showAlert({
-            show: true,
-            text: "I didn't get your email 😢",
-            type: "danger",
-          });
-        }
-      );
+            setTimeout(() => {
+              hideAlert(false);
+              setCurrentAnimation("idle");
+              setForm({
+                name: "",
+                email: "",
+                message: "",
+              });
+            }, 3000);
+          },
+          (error) => {
+            setLoading(false);
+            console.error(error);
+            setCurrentAnimation("idle");
+
+            showAlert({
+              show: true,
+              text: "I didn't get your email 😢",
+              type: "danger",
+            });
+          }
+        );
+    } else if (formType === "feedback") {
+      setFeedbackLoading(true);
+      setCurrentAnimation("hit");
+
+      const feedbackId = uuidv4();
+
+      LogRocket.track('User Feedback', {
+        feedbackId,
+        name: form.name,
+        email: form.email,
+        feedback: form.feedback,
+      });
+
+      setFeedbackLoading(false);
+      showAlert({
+        show: true,
+        text: "Thank you for your feedback 😃",
+        type: "success",
+      });
+
+      setTimeout(() => {
+        hideAlert(false);
+        setCurrentAnimation("idle");
+        setForm({
+          name: "",
+          email: "",
+          feedback: "",
+        });
+      }, 3000);
+    }
   };
 
   return (
@@ -80,7 +116,7 @@ const Contact = () => {
 
         <form
           ref={formRef}
-          onSubmit={handleSubmit}
+          onSubmit={(e) => handleSubmit(e, form, setForm, "email")}
           className='w-full flex flex-col gap-7 mt-14'
         >
           <label className='text-black-500 font-semibold'>
@@ -92,7 +128,7 @@ const Contact = () => {
               placeholder='Your Name'
               required
               value={form.name}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, setForm)}
               onFocus={handleFocus}
               onBlur={handleBlur}
             />
@@ -106,7 +142,7 @@ const Contact = () => {
               placeholder='email@gmail.com'
               required
               value={form.email}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, setForm)}
               onFocus={handleFocus}
               onBlur={handleBlur}
             />
@@ -119,7 +155,7 @@ const Contact = () => {
               className='textarea'
               placeholder='Write your email here!'
               value={form.message}
-              onChange={handleChange}
+              onChange={(e) => handleChange(e, setForm)}
               onFocus={handleFocus}
               onBlur={handleBlur}
             />
@@ -133,6 +169,66 @@ const Contact = () => {
             onBlur={handleBlur}
           >
             {loading ? "Sending..." : "Submit"}
+          </button>
+        </form>
+
+        <h1 className='head-text mt-10'>User Feedback</h1>
+
+        <form
+          ref={feedbackFormRef}
+          onSubmit={(e) => handleSubmit(e, feedbackForm, setFeedbackForm, "feedback")}
+          className='w-full flex flex-col gap-7 mt-14'
+        >
+          <label className='text-black-500 font-semibold'>
+            Name
+            <input
+              type='text'
+              name='name'
+              className='input'
+              placeholder='Your Name'
+              required
+              value={feedbackForm.name}
+              onChange={(e) => handleChange(e, setFeedbackForm)}
+              onFocus={handleFocus}
+              onBlur={handleBlur}
+            />
+          </label>
+          <label className='text-black-500 font-semibold'>
+            Email Address
+            <input
+              type='email'
+              name='email'
+              className='input'
+              placeholder='email@gmail.com'
+              required
+              value={feedbackForm.email}
+              onChange={(e) => handleChange(e, setFeedbackForm)}
+              onFocus={handleFocus}
+              onBlur={handleBlur}
+            />
+          </label>
+          <label className='text-black-500 font-semibold'>
+            Feedback
+            <textarea
+              name='feedback'
+              rows='4'
+              className='textarea'
+              placeholder='Share your feedback here!'
+              value={feedbackForm.feedback}
+              onChange={(e) => handleChange(e, setFeedbackForm)}
+              onFocus={handleFocus}
+              onBlur={handleBlur}
+            />
+          </label>
+
+          <button
+            type='submit'
+            disabled={feedbackLoading}
+            className='btn'
+            onFocus={handleFocus}
+            onBlur={handleBlur}
+          >
+            {feedbackLoading ? "Sending..." : "Submit"}
           </button>
         </form>
       </div>
