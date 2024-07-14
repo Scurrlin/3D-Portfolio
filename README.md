@@ -10,4 +10,3 @@ A new and improved version of [my developer portfolio](https://seancurrlin.onren
 * ReactJS
 * ThreeJS
 * Vercel
-* LogRocket
