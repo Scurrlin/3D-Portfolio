@@ -97,30 +97,13 @@ export const skills = [
 
 export const experiences = [
     {
-        title: "Enrollment Operations Lead",
-        company_name: "Northeastern University CPS",
-        icon: neu,
-        iconBg: "#FEF7DA",
-        date: "February 2018 - May 2022",
-        points: [
-            "Promoted to Lead 6 months after being hired as an Enrollment Operations Assistant in August 2017.",
-            "Played a vital role in orchestrating the launch of the “Student Hub” in April 2022 which resulted in a 75% improvement in international transcript condition fulfillment.",
-            "Implemented migration of external admissions email inbox to a Salesforce ticketing system which cut average response times by 50%, from 96 hours to 48 hours.",
-            "Spearheaded the crafting and submission of an approved proposal for upgrading all team members’ laptops with 16 GB RAM; productivity increased substantially.",
-            "Assisted in training student workers and managed applicant caseloads across multiple populations."
-        ],
-    },
-    {
-        title: "Onboarding Specialist",
+        title: "Customer Support Engineer",
         company_name: "Propcard",
         icon: propcard,
         iconBg: "#C0C0C0",
-        date: "May 2022 - July 2022",
+        date: "January 2023 - May 2024",
         points: [
-            "Responded to inbound client requests for meetings with initial outreach.",
-            "Effectively pitched the benefits of Propcard to potential clients, highlighting it’s unique value proposition.",
-            "Added relevant media copy to the custom Propcard CMS, ensuring high quality content presentations.",
-            "Guided clients through the Propcard platform, providing insights to maximize their usage and benefits."
+            "At Propcard, from January 2023 to May 2024, I partnered with a senior developer to construct an enhanced Web API for specific CRMLS data points. I administered the SQL Database, executing maintenance and updates as required, and oversaw cron jobs for MLS connection tokens, ensuring seamless data integration."
         ],
     },
     {
@@ -130,27 +113,29 @@ export const experiences = [
         iconBg: "#fbc3bc",
         date: "July 2022 - October 2022",
         points: [
-            "Software Engineering Bootcamp: Full-Time Immersive Program.", 
-            "12-week, 500+ hour Immersive Full Stack Software Engineering bootcamp. This intensive program covered product development fundamentals, object-oriented programming, MVC frameworks, data modeling, team collaboration strategies, and the creation of a professional portfolio."
-            
+            "At General Assembly, from July 2022 to October 2022, I created a professional portfolio showcasing my completed projects and technical skills. I learned and implemented various programming languages and tools, engaged in hands-on coding assignments and real-world projects, and collaborated with peers on group projects to simulate industry teamwork."            
         ],
     },
     {
-        title: "Customer Support Engineer",
+        title: "Onboarding Specialist",
         company_name: "Propcard",
         icon: propcard,
         iconBg: "#C0C0C0",
-        date: "January 2023 - May 2024",
+        date: "May 2022 - July 2022",
         points: [
-            "Expanded previous role to include custom website updates via HTML injection.",
-            "Collaborated with a senior developer to build an updated Web API tailored for specific CRMLS data points.",
-            "Modernized data pipelines and ETL processes to improve platform scalability.",
-            "Installed analytics tokens and tracking pixels to collect and analyze web traffic data.",
-            "Managed SQL Database, performing maintenance and updates as needed.",
-            "Monitored cron jobs for MLS connection tokens."
-
+            "At Propcard, from May 2022 to July 2022, I responded to inbound client requests, initiating contact and scheduling meetings. I assisted clients in setting up and optimizing their accounts for better engagement and results, maintaining a high level of client satisfaction through attentive and personalized support. I also collaborated with the team to improve onboarding processes and enhance the overall client experience."
         ],
     },
+    {
+        title: "Enrollment Operations Lead",
+        company_name: "Northeastern University CPS",
+        icon: neu,
+        iconBg: "#FEF7DA",
+        date: "February 2018 - May 2022",
+        points: [
+            "At Northeastern University, from February 2018 to May 2022, I spearheaded the crafting and submission of an approved proposal to upgrade all team members’ laptops to 16 GB RAM, significantly boosting productivity. I assisted in training student workers and managed applicant caseloads across multiple populations. I also coordinated with various departments to streamline enrollment processes and resolve issues."
+        ],
+    }
 ];
 
 export const socialLinks = [
