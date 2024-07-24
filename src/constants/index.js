@@ -103,7 +103,9 @@ export const experiences = [
         iconBg: "#C0C0C0",
         date: "January 2023 - May 2024",
         points: [
-            "At Propcard, from January 2023 to May 2024, I partnered with a senior developer to construct an enhanced Web API for specific CRMLS data points. I administered the SQL Database, executing maintenance and updates as required, and oversaw cron jobs for MLS connection tokens, ensuring seamless data integration."
+            "Expanded role scope to encompass custom website updates through HTML injection.",
+            "Revamped data pipelines and ETL processes to enhance platform scalability.",
+            "Implemented analytics tokens and tracking pixels for comprehensive web traffic data collection and analysis."
         ],
     },
     {
@@ -113,7 +115,10 @@ export const experiences = [
         iconBg: "#fbc3bc",
         date: "July 2022 - October 2022",
         points: [
-            "At General Assembly, from July 2022 to October 2022, I created a professional portfolio showcasing my completed projects and technical skills. I learned and implemented various programming languages and tools, engaged in hands-on coding assignments and real-world projects, and collaborated with peers on group projects to simulate industry teamwork."            
+            "Completed 12-week, 500+ hour fully immersive full-time software engineering bootcamp.",
+            "Gained expertise in product development fundamentals, object-oriented programming, and MVC frameworks.",
+            "Developed skills in data modeling and team collaboration strategies.",
+            "Received feedback from instructors and peers to refine coding techniques and project outcomes."            
         ],
     },
     {
@@ -123,7 +128,9 @@ export const experiences = [
         iconBg: "#C0C0C0",
         date: "May 2022 - July 2022",
         points: [
-            "At Propcard, from May 2022 to July 2022, I responded to inbound client requests, initiating contact and scheduling meetings. I assisted clients in setting up and optimizing their accounts for better engagement and results, maintaining a high level of client satisfaction through attentive and personalized support. I also collaborated with the team to improve onboarding processes and enhance the overall client experience."
+            "Pitched benefits of Propcard effectively, emphasizing its unique value proposition to potential clients.",
+            "Added and curated relevant media copy to custom Propcard CMS, ensuring high-quality content presentations.",
+            "Guided clients through Propcard platform, providing insights to maximize their usage and benefits."
         ],
     },
     {
@@ -133,7 +140,9 @@ export const experiences = [
         iconBg: "#FEF7DA",
         date: "February 2018 - May 2022",
         points: [
-            "At Northeastern University, from February 2018 to May 2022, I spearheaded the crafting and submission of an approved proposal to upgrade all team members’ laptops to 16 GB RAM, significantly boosting productivity. I assisted in training student workers and managed applicant caseloads across multiple populations. I also coordinated with various departments to streamline enrollment processes and resolve issues."
+            'Promoted to Lead six months after being hired as an Enrollment Operations Assistant in August 2017.',
+            'Key contributor to launch of "Student Hub" in April 2022, achieving 75% improvement in international transcript fulfillment.',
+            'Implemented migration of external admissions email inbox to Salesforce ticketing system, cutting average response times by 50%, from 96 hours to 48 hours.'
         ],
     }
 ];
