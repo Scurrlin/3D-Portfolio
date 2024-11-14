@@ -100,7 +100,7 @@ export const experiences = [
         title: "Associate Software Engineer",
         company_name: "GoingClear",
         icon: gc,
-        iconBg: "#A4F287",
+        iconBg: "#B6F2A1",
         date: "July 2024 - Present",
         points: [
             "Assisted in the deployment of Lee & Low Books’ website, the largest multicultural children’s book publisher in the United States.",
