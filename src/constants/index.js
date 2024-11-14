@@ -116,7 +116,7 @@ export const experiences = [
         iconBg: "#C0C0C0",
         date: "January 2023 - May 2024",
         points: [
-            "Expanded role scope to encompass custom website updates through HTML injection.",
+            "Facilitated client onboarding and performed custom website updates through HTML injection.",
             "Revamped data pipelines and ETL processes to enhance platform scalability.",
             "Implemented analytics tokens and tracking pixels for comprehensive web traffic data collection and analysis."
         ],
