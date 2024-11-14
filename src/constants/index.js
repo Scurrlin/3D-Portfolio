@@ -1,4 +1,4 @@
-import { neu, ga, propcard } from "../assets/images";
+import { neu, ga, propcard, gc } from "../assets/images";
 import {
     css,
     express,
@@ -97,6 +97,19 @@ export const skills = [
 
 export const experiences = [
     {
+        title: "Associate Software Engineer",
+        company_name: "GoingClear",
+        icon: gc,
+        iconBg: "#A4F287",
+        date: "July 2024 - Present",
+        points: [
+            "Assisted in the deployment of Lee & Low Books’ website, the largest multicultural children’s book publisher in the United States.",
+            "Engaged in ideation and planning meetings with customers to finalize minimum viable product, tech stack and project plan.",
+            "Conducted quality assurance testing on new features to identity and resolve issues pre-launch.",
+            "Interviewed previous clients to record live testimonials for social media content."
+        ],
+    },
+    {
         title: "Customer Support Engineer",
         company_name: "Propcard",
         icon: propcard,
@@ -119,18 +132,6 @@ export const experiences = [
             "Gained expertise in product development fundamentals, object-oriented programming, and MVC frameworks.",
             "Developed skills in data modeling and team collaboration strategies.",
             "Received feedback from instructors and peers to refine coding techniques and project outcomes."            
-        ],
-    },
-    {
-        title: "Onboarding Specialist",
-        company_name: "Propcard",
-        icon: propcard,
-        iconBg: "#C0C0C0",
-        date: "May 2022 - July 2022",
-        points: [
-            "Pitched benefits of Propcard effectively, emphasizing its unique value proposition to potential clients.",
-            "Added and curated relevant media copy to custom Propcard CMS, ensuring high-quality content presentations.",
-            "Guided clients through Propcard platform, providing insights to maximize their usage and benefits."
         ],
     },
     {
