@@ -9,7 +9,7 @@ const Navbar = () => {
         <img src={logo} alt='logo' className='w-18 h-18 object-contain' />
       </NavLink>
       <nav className='flex text-base gap-3 font-medium'>
-        <a href="https://drive.google.com/file/d/1CY_gyT3EHxYqb2wKRUirCV-zpvato7Y-/view?usp=sharing" target='_blank' rel='noopener noreferrer' className="text-black">
+        <a href="https://drive.google.com/file/d/1p1lhMqom0l6OPEaehPRYDtxU0sYNQ9XJ/view?usp=sharing" target='_blank' rel='noopener noreferrer' className="text-black">
           Resume
         </a>
         <NavLink to='/about' className={({ isActive }) => isActive ? "text-blue-600" : "text-black" }>

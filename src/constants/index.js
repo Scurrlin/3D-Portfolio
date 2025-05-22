@@ -103,10 +103,10 @@ export const experiences = [
         iconBg: "#B6F2A1",
         date: "July 2024 - Present",
         points: [
-            "Assisted in the deployment of Lee & Low Books’ e-commerce website, the largest multicultural children’s book publisher in the United States.",
-            "Engaged in ideation and planning meetings with customers to finalize minimum viable product, tech stack and project plan.",
-            "Conducted quality assurance testing on new features to identity and resolve issues pre-launch.",
-            "Interviewed previous clients to record live testimonials for social media content."
+            "Supported the deployment of Lee & Low Books’ e-commerce website, the largest multicultural children’s book publisher in the United States.",
+            "Engaged with customers in ideation and planning meetings to finalize minimum viable product, tech stack, and project plan.",
+            "Conducted QA testing on new features to identify and resolve issues before launch.",
+            "Interviewed previous clients to record live testimonials, strengthening brand trust and boosting social media engagement."
         ],
     },
     {
@@ -116,9 +116,9 @@ export const experiences = [
         iconBg: "#C0C0C0",
         date: "January 2023 - May 2024",
         points: [
-            "Facilitated client onboarding and performed custom website updates through HTML injection.",
-            "Revamped data pipelines and ETL processes to enhance platform scalability.",
-            "Implemented analytics tokens and tracking pixels for comprehensive web traffic data collection and analysis."
+            "Administered and maintained SQL database containing records for 200+ agents across 50+ teams representing 7,200+ properties.",
+            "Revamped data pipelines and ETL processes to improve platform scalability and system resilience.",
+            "Deployed analytics tokens and tracking pixels for comprehensive data analysis, increasing reengagement from targeted outreach by 110%."
         ],
     },
     {
@@ -142,8 +142,8 @@ export const experiences = [
         date: "February 2018 - May 2022",
         points: [
             'Promoted to Lead six months after being hired as an Enrollment Operations Assistant in August 2017.',
-            'Key contributor to launch of "Student Hub" in April 2022, achieving 75% improvement in international transcript fulfillment.',
-            'Implemented migration of external admissions email inbox to Salesforce ticketing system, cutting average response times by 50%, from 96 hours to 48 hours.'
+            'Helped launch the Student Hub in April 2022, leading to a 75% increase in on-time international transcript verification that quarter.',
+            'Led migration of external admissions email inbox to Salesforce ticketing system, cutting average response times by 50% (96 to 48 hours).'
         ],
     }
 ];
